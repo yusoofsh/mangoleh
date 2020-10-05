@@ -3,7 +3,7 @@ date: '2020-05-01'
 title: 'Lead Author'
 company: 'CVPR 2020 VL3'
 location: 'Seattle, Washington'
-range: 'March 2020 - June 2020'
+range: 'February 2020 - June 2020'
 url: 'https://www.learning-with-limited-labels.com/'
 ---
 

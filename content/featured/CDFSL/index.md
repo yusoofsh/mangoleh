@@ -8,7 +8,7 @@ tech:
   - Python
   - PyTorch
   - Torchvision
-  - Meta Learning
+  - Computer Vision
 showInProjects: true
 ---
 
