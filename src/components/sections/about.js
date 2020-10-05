@@ -139,7 +139,7 @@ const About = () => {
     'PySpark, SQL, Databricks',
     'PyTorch, TensorFlow',
     'Python, R, C++',
-    'Javascript',
+    'React, Gatsby, Javascript',
   ];
 
   return (
@@ -159,9 +159,9 @@ const About = () => {
 
             <p>
               I have graduated with a Masters from{' '}
-              <a href="https://www.princeton.edu">Princeton University</a>, specializing in
-              Financial Engineering and Machine Learning. At Princeton, I presented my research on
-              deep learning for computer vision at the{' '}
+              <a href="https://bcf.princeton.edu/master-in-finance/">Princeton University</a>,
+              specializing in Financial Engineering and Machine Learning. At Princeton, I presented
+              my research on deep learning for computer vision at the{' '}
               <a href="https://www.learning-with-limited-labels.com/challenge">
                 CVPR 2020 VL3 Workshop
               </a>
