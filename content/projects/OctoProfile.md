@@ -1,12 +1,13 @@
 ---
-date: '2019-07-15'
-title: 'OctoProfile'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://youtu.be/BZBXDb6NN6k'
+date: '2020-06-01'
+title: 'Cross-Domain Few-Shot Learning'
+github: 'https://github.com/johncai117/Meta-Fine-Tuning'
+external: 'https://arxiv.org/abs/2005.10544'
 tech:
-  - Next.js
-  - Chart.js
-  - GitHub API
+  - Python
+  - PyTorch
+  - Torchvision
+  - Meta Learning
 showInProjects: false
 ---
 
