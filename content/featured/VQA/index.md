@@ -2,7 +2,7 @@
 date: '2020-05-01'
 title: 'Visual Question Answering'
 cover: './vqa.jpg'
-github: 'https://github.com/johncai117/Meta-Fine-Tuning'
+github: 'https://github.com/johncai117/VQA-Project'
 external: 'https://www.academia.edu/44232933/Visual_Question_Answering_using_LSTM_and_ResNet'
 tech:
   - Python
