@@ -132,7 +132,15 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
+  const skills = [
+    'Computer Vision, Machine Learning',
+    'Natural Language Processing',
+    'Statistics, Econometrics',
+    'PySpark, SQL, Databricks',
+    'PyTorch, TensorFlow',
+    'Python, R, C++',
+    'Javascript',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,22 +149,28 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
+            <p>Hello! I'm John, a software engineer based in Singapore. </p>
 
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              I enjoy building machine learning models that directly impact people's lives. My goal
+              is to build ML systems that adapt the latest state-of-the-art algorithms to produce
+              scalable solutions.
             </p>
 
             <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">Northeastern University</a>, I joined the
-              engineering team at <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a daily basis.
+              I have graduated with a Masters from{' '}
+              <a href="https://www.princeton.edu">Princeton University</a>, specializing in
+              Financial Engineering and Machine Learning. At Princeton, I presented my research on
+              deep learning for computer vision at the{' '}
+              <a href="https://www.learning-with-limited-labels.com/challenge">
+                CVPR 2020 VL3 Workshop
+              </a>
+              . After graduating, I worked in the AI Platforms team at{' '}
+              <a href="https://www.tech.gov.sg">GovTech Singapore</a>, where we build recommender
+              systems for Singapore's largest job portal.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Here's what I've been up to lately: </p>
           </div>
 
           <ul className="skills-list">

@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
+    title: 'John Cai',
     description:
       'Brittany Chiang is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'JohnCai',
+        short_name: 'JohnCai',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
