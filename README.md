@@ -1,4 +1,3 @@
-
 <h1 align="center">
   johnc.ai
 </h1>
@@ -17,7 +16,7 @@
   </a>
 </p>
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+![demo](https://raw.githubusercontent.com/johncai117/johncai.github.io/main/src/images/demo.png)
 
 ## 🚨 Forking this repo (please read!)
 
