@@ -20,7 +20,7 @@
 
 ## 🚨 Forking this repo (please read!)
 
-This is forked from Brittany's repo, who has kindly allowed fellow web enthusiasts to fork her repo as long as credit is given. Again, thanks Brittany for the permission and please kindly credit her if you decide to fork the repo too.
+This is forked from Brittany's repo. She has kindly given permission to fork her repo as long as credit is given. Again, thanks Brittany for the permission and please kindly credit her if you decide to fork the repo too.
 
 ## Edits that I have made
 
