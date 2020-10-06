@@ -166,7 +166,7 @@ const About = () => {
                 CVPR 2020 VL3 Workshop
               </a>
               . After graduating, I worked in the AI Platforms team at{' '}
-              <a href="https://www.tech.gov.sg">GovTech Singapore</a>, where we build recommender
+              <a href="https://www.tech.gov.sg">GovTech Singapore</a>, where we build ML recommender
               systems for Singapore's largest job portal.
             </p>
 
