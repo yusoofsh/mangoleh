@@ -55,7 +55,7 @@ const Hero = () => {
       I'm a software engineer with experience building machine learning models for computer vision,
       recommender systems and macroeconomic forecasting. Was previously at{' '}
       <a href="https://www.tech.gov.sg">@GovTech</a>,{' '}
-      <a href="https://www.smartnation.gov.sg/">@Smart Nation Office</a>,{' '}
+      <a href="https://www.smartnation.gov.sg/">@Smart Nation</a>,{' '}
       <a href="https://www.arcstone.co">@Arcstone</a>,{' '}
       <a href="https://bcf.princeton.edu/master-in-finance/">@Princeton</a> and{' '}
       <a href="https://www.cam.ac.uk">@Cambridge</a>.
