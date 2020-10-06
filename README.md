@@ -1,11 +1,9 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/johncai117/johncai117.github.io/main/src/images/logo.png" width="100" />
-</div>
+
 <h1 align="center">
-  brittanychiang.com - v4
+  johnc.ai
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://johnc.ai" target="_blank">johnc.ai</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The second iteration of <a href="https://johnc.ai" target="_blank">johnc.ai</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>. All credit goes to Brittany Chiang for coding up the fourth iteration of her website, which is the base for this website.
 </p>
 <p align="center">
   Previous iterations by Britanny:
