@@ -20,15 +20,24 @@
 
 ## 🚨 Forking this repo (please read!)
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+This is forked from Brittany's repo, who has kindly allowed fellow web enthusiasts to fork her repo as long as credit is given. Again, thanks Brittany for the permission and please kindly credit her if you decide to fork the repo too.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+## Edits that I have made
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+Having had little experience with the latest tools in web development, I decided to try it out for myself so that I can learn some useful frontend web dev skills. This started off with spending 2 afternoons going through <a href="https://www.gatsbyjs.com/tutorial/" target="_blank">Gatsby tutorial</a>, which quickly got me up to speed with the basics of the language.
+
+Following which, I spent another afternoon looking at Brittany Chiang's code and modifying the parts that needed to be changed. It's a fairly intuitive process, especially as she comments her code well. A difficulty came in changing the logos, which my good friend <a href="https://github.com/hivestrung" target="_blank">Shiv Gunter</a> did warn me about. Thankfully, after learningg about what he did with the Scalable Vector Graphics.
+
+Deploying had a handy guide here that is rather well written so as long as you follow it, it is quite simple to deploy on Github Pages: <a href="https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/" target="_blank"> deployment tutorial</a>.
+
+## Some next steps
+
+Implement slide show within the website.
+Combine mixed media - video + images for some of the projects being showcased.
 
 ### TL;DR
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
+Yes, you can fork this repo. Please give proper credit to [brittanychiang.com](https://brittanychiang.com). Thanks!
 
 ## 🛠 Installation & Set Up
 
