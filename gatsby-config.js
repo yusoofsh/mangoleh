@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'John Cai',
     description:
-      'I\'m a software engineer based in Singapore with experience building machine learning models for computer vision, recommender systems and macroeconomic forecasting.',
+      'I\'m a software engineer with experience building machine learning models for computer vision, recommender systems and macroeconomic forecasting.',
     siteUrl: 'https://johnc.ai', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@johncai117',
