@@ -7,6 +7,7 @@ tech:
   - Python
   - PyTorch
   - OpenCV
+  - Seaborn
 company: 'Princeton University'
 showInProjects: true
 ---

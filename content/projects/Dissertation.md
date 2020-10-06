@@ -5,6 +5,7 @@ github: ''
 external: 'https://www.academia.edu/40813014/Predicting_Economic_Recessions_using_Natural_Language_Processing'
 tech:
   - Python
+  - MATLAB
   - BeautifulSoup
   - Selenium
   - NLTK

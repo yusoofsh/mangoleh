@@ -3,7 +3,7 @@ date: '2020-06-20'
 title: 'Computational Scientist Intern'
 company: 'GovTech'
 location: 'Singapore'
-range: 'May 2020 - Aug 2020'
+range: 'May 2020 - August 2020'
 url: 'https://www.tech.gov.sg/'
 ---
 

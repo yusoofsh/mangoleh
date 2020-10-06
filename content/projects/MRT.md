@@ -1,11 +1,12 @@
 ---
-date: '2020-04-01'
+date: '2020-05-01'
 title: 'Train Network Reconstruction'
 github: ''
 external: ''
 tech:
   - Python
   - NetworkX
+  - Statsmodel
   - Matplotlib
 company: 'GovTech'
 showInProjects: true
