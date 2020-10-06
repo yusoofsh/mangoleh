@@ -16,7 +16,7 @@
   </a>
 </p>
 
-![demo](https://raw.githubusercontent.com/johncai117/johncai.github.io/main/src/images/demo.png)
+![demo](https://raw.githubusercontent.com/johncai117/johncai117.github.io/main/src/images/demo.png)
 
 ## 🚨 Forking this repo (please read!)
 

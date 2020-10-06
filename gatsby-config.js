@@ -5,7 +5,7 @@ module.exports = {
     title: 'John Cai',
     description:
       'I\'m a software engineer based in Singapore with experience building machine learning models for computer vision, recommender systems and macroeconomic forecasting.',
-    siteUrl: 'https://johncaijw.github.io', // No trailing slash allowed!
+    siteUrl: 'https://johnc.ai', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@johncai117',
   },
