@@ -152,9 +152,9 @@ const About = () => {
             <p>Hello! I'm John, a software engineer based in Singapore. </p>
 
             <p>
-              I enjoy building machine learning models that directly impact people's lives. My goal
-              is to build ML systems that adapt the latest state-of-the-art algorithms to produce
-              scalable solutions.
+              I enjoy building machine learning models that have a real-world impact on people's
+              lives. My goal is to build ML systems that adapt the latest state-of-the-art
+              algorithms to produce scalable solutions.
             </p>
 
             <p>
