@@ -37,7 +37,7 @@ Combine mixed media - video + images for some of the projects being showcased.
 
 ### TL;DR
 
-Yes, you can fork this repo. Please give proper credit to [brittanychiang.com](https://brittanychiang.com). Thanks!
+Yes, you can fork the repo. Please give proper credit to [brittanychiang.com](https://brittanychiang.com). Thanks!
 
 ## 🛠 Installation & Set Up
 
