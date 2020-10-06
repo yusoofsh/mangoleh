@@ -6,7 +6,7 @@ external: ''
 tech:
   - Python
   - NetworkX
-  - Statsmodel
+  - Scipy
   - Matplotlib
 company: 'GovTech'
 showInProjects: true
