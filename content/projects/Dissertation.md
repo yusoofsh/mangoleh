@@ -14,4 +14,4 @@ company: 'University of Cambridge'
 showInProjects: true
 ---
 
-Dissertation at Cambridge. Used NLP to study if economic uncertainty can predict recessions. Implemented web-scrapers to retrieve over 300,000 news articles using Selenium/ BeautifulSoup. Quantified uncertainty using Maximum Entropy models. Invited to publish.
+Dissertation at Cambridge. Used NLP to study if economic uncertainty can predict recessions. Implemented web-scrapers to retrieve over 300,000 news articles using Selenium/ BeautifulSoup. Quantified economic uncertainty using MaxEnt models. Invited to publish.
