@@ -10,4 +10,4 @@ company: 'Princeton University'
 showInProjects: true
 ---
 
-A less-code heavy and more math-heavy project. Bundle adjustment takes a set of parameters to minimize reprojection error of multiple cameras. For efficient code implementation, I utilized a modified Levenberg-Marquardt algorithm and exploited the sparse structure of the matrices.
+A less code-heavy and more math-heavy project. Bundle adjustment takes a set of parameters to minimize reprojection error of multiple cameras. For efficient code implementation, I utilized a modified Levenberg-Marquardt algorithm and exploited the sparse structure of the matrices.

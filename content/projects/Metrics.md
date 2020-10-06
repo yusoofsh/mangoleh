@@ -11,4 +11,4 @@ company: 'University of Cambridge'
 showInProjects: true
 ---
 
-Investigated the principal factors behind measured gains in education by exploiting a natural experiment in schooling age. Performed causal inference using instrumental variables and estimated the extra value of a day in school on education.
+Investigated the principal factors behind measured gains in education by exploiting a natural experiment in schooling age. Performed causal inference using instrumental variables and estimated the extra value of a day in school on education outcomes.
