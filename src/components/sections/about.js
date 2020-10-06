@@ -161,11 +161,9 @@ const About = () => {
               I have graduated with a Masters from{' '}
               <a href="https://bcf.princeton.edu/master-in-finance/">Princeton University</a>,
               specializing in Financial Engineering and Machine Learning. At Princeton, I presented
-              my research on deep learning for computer vision at the{' '}
-              <a href="https://www.learning-with-limited-labels.com/challenge">
-                CVPR 2020 VL3 Workshop
-              </a>
-              . After graduating, I worked in the Data Science and Artificial Inteelligence division
+              my research on deep learning for computer vision at{' '}
+              <a href="https://www.learning-with-limited-labels.com/challenge">CVPR 2020 VL3</a>.
+              After graduating, I worked in the Data Science and Artificial Inteelligence division
               at <a href="https://www.tech.gov.sg">GovTech Singapore</a>, where we build AI
               Platforms for Singapore's largest job portal.
             </p>
