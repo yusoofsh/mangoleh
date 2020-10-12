@@ -59,6 +59,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-is": "^16.13.1",
     "react-transition-group": "^4.4.1",
     "scrollreveal": "^4.0.7",
     "smooth-scroll": "^16.1.3",
