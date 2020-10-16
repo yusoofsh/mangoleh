@@ -75,7 +75,7 @@ const Hero = () => {
       <TransitionGroup component={null}>
         {isMounted &&
           items.map((item, index) => (
-            <CSSTransition key={i} classNames="fadeup">
+            <CSSTransition key={index} classNames="fadeup">
               <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
             </CSSTransition>
           ))}

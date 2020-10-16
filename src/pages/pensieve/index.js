@@ -143,7 +143,7 @@ const PensievePage = ({ location, data }) => {
                 const d = new Date(date);
 
                 return (
-                  <StyledPost key={i} tabIndex="0">
+                  <StyledPost key={index} tabIndex="0">
                     <StyledPostInner>
                       <header>
                         <Link to={slug}>
@@ -162,7 +162,7 @@ const PensievePage = ({ location, data }) => {
                         <StyledDate>{`${d.toLocaleDateString()}`}</StyledDate>
                         <StyledTags>
                           {tags.map((tag, index) => (
-                            <li key={i}>
+                            <li key={index}>
                               <Link
                                 to={`/pensieve/tags/${kebabCase(tag)}/`}
                                 className="inline-link">

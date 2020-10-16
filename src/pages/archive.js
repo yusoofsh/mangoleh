@@ -177,7 +177,9 @@ const ArchivePage = ({ location, data }) => {
                     company,
                   } = node.frontmatter;
                   return (
-                    <tr key={i} ref={el => (revealProjects.current[i] = el)}>
+                    <tr
+                      key={index}
+                      ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(
                         date,
                       ).getFullYear()}`}</td>
@@ -191,7 +193,7 @@ const ArchivePage = ({ location, data }) => {
                       <td className="tech hide-on-mobile">
                         {tech.length > 0 &&
                           tech.map((item, index) => (
-                            <span key={i}>
+                            <span key={index}>
                               {item}
                               {''}
                               {i !== tech.length - 1 && (
