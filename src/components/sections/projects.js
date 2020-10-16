@@ -191,12 +191,12 @@ const Projects = () => {
 
             return (
               <CSSTransition
-                key={i}
+                key={index}
                 classNames="fadeup"
                 timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
                 exit={false}>
                 <StyledProject
-                  key={i}
+                  key={index}
                   ref={el => (revealProjects.current[i] = el)}
                   tabIndex="0"
                   style={{
@@ -236,7 +236,7 @@ const Projects = () => {
                       {tech && (
                         <ul className="project-tech-list">
                           {tech.map((tech, index) => (
-                            <li key={i}>{tech}</li>
+                            <li key={index}>{tech}</li>
                           ))}
                         </ul>
                       )}

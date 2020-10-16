@@ -289,7 +289,7 @@ const Featured = () => {
 
             return (
               <StyledProject
-                key={i}
+                key={index}
                 ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <p className="project-overline">Featured Project</p>
@@ -302,7 +302,7 @@ const Featured = () => {
                   {tech.length && (
                     <ul className="project-tech-list">
                       {tech.map((tech, index) => (
-                        <li key={i}>{tech}</li>
+                        <li key={index}>{tech}</li>
                       ))}
                     </ul>
                   )}

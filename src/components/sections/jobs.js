@@ -235,7 +235,7 @@ const Jobs = () => {
             jobsData.map(({ node }, index) => {
               const { company } = node.frontmatter;
               return (
-                <li key={i}>
+                <li key={index}>
                   <StyledTabButton
                     isActive={activeTabId === i}
                     onClick={() => setActiveTabId(i)}
@@ -260,7 +260,7 @@ const Jobs = () => {
 
             return (
               <CSSTransition
-                key={i}
+                key={index}
                 in={activeTabId === i}
                 timeout={250}
                 classNames="fade">
