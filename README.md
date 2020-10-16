@@ -6,6 +6,8 @@
   All credit goes to Brittany Chiang for coding up the fourth iteration of her website, which is the base for this website.
 </p>
 
+![Demo!](/src/images/demo.png)
+
 ## 🛠 Installation & Set Up
 
 1. Install dependencies
