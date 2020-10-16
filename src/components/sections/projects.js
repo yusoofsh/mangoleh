@@ -163,7 +163,7 @@ const Projects = () => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
     revealProjects.current.forEach((ref, index) =>
-      sr.reveal(ref, srConfig(i * 100)),
+      sr.reveal(ref, srConfig(index * 100)),
     );
   }, []);
 
@@ -193,15 +193,15 @@ const Projects = () => {
               <CSSTransition
                 key={index}
                 classNames="fadeup"
-                timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
+                timeout={index >= GRID_LIMIT ? (index - GRID_LIMIT) * 300 : 300}
                 exit={false}>
                 <StyledProject
                   key={index}
-                  ref={el => (revealProjects.current[i] = el)}
+                  ref={el => (revealProjects.current[index] = el)}
                   tabIndex="0"
                   style={{
                     transitionDelay: `${
-                      i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0
+                      index >= GRID_LIMIT ? (index - GRID_LIMIT) * 100 : 0
                     }ms`,
                   }}>
                   <div className="project-inner">

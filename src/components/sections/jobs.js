@@ -237,14 +237,14 @@ const Jobs = () => {
               return (
                 <li key={index}>
                   <StyledTabButton
-                    isActive={activeTabId === i}
-                    onClick={() => setActiveTabId(i)}
-                    ref={el => (tabs.current[i] = el)}
-                    id={`tab-${i}`}
+                    isActive={activeTabId === index}
+                    onClick={() => setActiveTabId(index)}
+                    ref={el => (tabs.current[index] = el)}
+                    id={`tab-${index}`}
                     role="tab"
-                    aria-selected={activeTabId === i ? true : false}
-                    aria-controls={`panel-${i}`}
-                    tabIndex={activeTabId === i ? '0' : '-1'}>
+                    aria-selected={activeTabId === index ? true : false}
+                    aria-controls={`panel-${index}`}
+                    tabIndex={activeTabId === index ? '0' : '-1'}>
                     <span>{company}</span>
                   </StyledTabButton>
                 </li>
@@ -261,16 +261,16 @@ const Jobs = () => {
             return (
               <CSSTransition
                 key={index}
-                in={activeTabId === i}
+                in={activeTabId === index}
                 timeout={250}
                 classNames="fade">
                 <StyledTabContent
-                  id={`panel-${i}`}
+                  id={`panel-${index}`}
                   role="tabpanel"
-                  tabIndex={activeTabId === i ? '0' : '-1'}
-                  aria-labelledby={`tab-${i}`}
-                  aria-hidden={activeTabId !== i}
-                  hidden={activeTabId !== i}>
+                  tabIndex={activeTabId === index ? '0' : '-1'}
+                  aria-labelledby={`tab-${index}`}
+                  aria-hidden={activeTabId !== index}
+                  hidden={activeTabId !== index}>
                   <h3>
                     <span>{title}</span>
                     <span className="company">

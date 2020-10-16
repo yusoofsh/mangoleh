@@ -138,7 +138,7 @@ const ArchivePage = ({ location, data }) => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealTable.current, srConfig(200, 0));
     revealProjects.current.forEach((ref, index) =>
-      sr.reveal(ref, srConfig(i * 10)),
+      sr.reveal(ref, srConfig(index * 10)),
     );
   }, []);
 
@@ -179,7 +179,7 @@ const ArchivePage = ({ location, data }) => {
                   return (
                     <tr
                       key={index}
-                      ref={el => (revealProjects.current[i] = el)}>
+                      ref={el => (revealProjects.current[index] = el)}>
                       <td className="overline year">{`${new Date(
                         date,
                       ).getFullYear()}`}</td>
@@ -196,7 +196,7 @@ const ArchivePage = ({ location, data }) => {
                             <span key={index}>
                               {item}
                               {''}
-                              {i !== tech.length - 1 && (
+                              {index !== tech.length - 1 && (
                                 <span className="separator">&middot;</span>
                               )}
                             </span>
