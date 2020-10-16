@@ -175,7 +175,8 @@ const About = () => {
           </div>
 
           <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            {skills &&
+              skills.map((skill, index) => <li key={index}>{skill}</li>)}
           </ul>
         </StyledText>
 

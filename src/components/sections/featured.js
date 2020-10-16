@@ -270,7 +270,9 @@ const Featured = () => {
   const revealProjects = useRef([]);
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, index) =>
+      sr.reveal(ref, srConfig(i * 100)),
+    );
   }, []);
 
   return (
@@ -281,20 +283,25 @@ const Featured = () => {
 
       <div>
         {featuredProjects &&
-          featuredProjects.map(({ node }, i) => {
+          featuredProjects.map(({ node }, index) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
 
             return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+              <StyledProject
+                key={i}
+                ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <p className="project-overline">Featured Project</p>
                   <h3 className="project-title">{title}</h3>
-                  <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+                  <div
+                    className="project-description"
+                    dangerouslySetInnerHTML={{ __html: html }}
+                  />
 
                   {tech.length && (
                     <ul className="project-tech-list">
-                      {tech.map((tech, i) => (
+                      {tech.map((tech, index) => (
                         <li key={i}>{tech}</li>
                       ))}
                     </ul>
@@ -316,7 +323,11 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
-                    <Img fluid={cover.childImageSharp.fluid} alt={title} className="img" />
+                    <Img
+                      fluid={cover.childImageSharp.fluid}
+                      alt={title}
+                      className="img"
+                    />
                   </a>
                 </div>
               </StyledProject>

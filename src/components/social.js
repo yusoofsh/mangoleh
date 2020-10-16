@@ -47,8 +47,8 @@ const Social = ({ isHome }) => (
   <Side isHome={isHome} orientation="left">
     <StyledSocialList>
       {socialMedia &&
-        socialMedia.map(({ url, name }, i) => (
-          <li key={i}>
+        socialMedia.map(({ url, name }, index) => (
+          <li key={index}>
             <a href={url} aria-label={name}>
               <Icon name={name} />
             </a>

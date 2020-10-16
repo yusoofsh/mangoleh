@@ -137,7 +137,7 @@ const PensievePage = ({ location, data }) => {
         <StyledGrid>
           <div className="posts">
             {posts.length > 0 &&
-              posts.map(({ node }, i) => {
+              posts.map(({ node }, index) => {
                 const { frontmatter } = node;
                 const { title, description, slug, date, tags } = frontmatter;
                 const d = new Date(date);
@@ -153,13 +153,15 @@ const PensievePage = ({ location, data }) => {
                             </StyledFolder>
                           </StyledPostHeader>
                           <StyledPostName>{title}</StyledPostName>
-                          <StyledPostDescription>{description}</StyledPostDescription>
+                          <StyledPostDescription>
+                            {description}
+                          </StyledPostDescription>
                         </Link>
                       </header>
                       <footer>
                         <StyledDate>{`${d.toLocaleDateString()}`}</StyledDate>
                         <StyledTags>
-                          {tags.map((tag, i) => (
+                          {tags.map((tag, index) => (
                             <li key={i}>
                               <Link
                                 to={`/pensieve/tags/${kebabCase(tag)}/`}
@@ -191,7 +193,10 @@ export default PensievePage;
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/posts/" }, frontmatter: { draft: { ne: true } } }
+      filter: {
+        fileAbsolutePath: { regex: "/posts/" }
+        frontmatter: { draft: { ne: true } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

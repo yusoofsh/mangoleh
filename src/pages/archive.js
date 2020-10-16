@@ -137,7 +137,9 @@ const ArchivePage = ({ location, data }) => {
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealTable.current, srConfig(200, 0));
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
+    revealProjects.current.forEach((ref, index) =>
+      sr.reveal(ref, srConfig(i * 10)),
+    );
   }, []);
 
   return (
@@ -163,7 +165,7 @@ const ArchivePage = ({ location, data }) => {
             </thead>
             <tbody>
               {projects.length > 0 &&
-                projects.map(({ node }, i) => {
+                projects.map(({ node }, index) => {
                   const {
                     date,
                     github,
@@ -176,7 +178,9 @@ const ArchivePage = ({ location, data }) => {
                   } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
-                      <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
+                      <td className="overline year">{`${new Date(
+                        date,
+                      ).getFullYear()}`}</td>
 
                       <td className="title">{title}</td>
 
@@ -186,11 +190,13 @@ const ArchivePage = ({ location, data }) => {
 
                       <td className="tech hide-on-mobile">
                         {tech.length > 0 &&
-                          tech.map((item, i) => (
+                          tech.map((item, index) => (
                             <span key={i}>
                               {item}
                               {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
+                              {i !== tech.length - 1 && (
+                                <span className="separator">&middot;</span>
+                              )}
                             </span>
                           ))}
                       </td>
@@ -213,7 +219,9 @@ const ArchivePage = ({ location, data }) => {
                             </a>
                           )}
                           {android && (
-                            <a href={android} aria-label="Google Play Store Link">
+                            <a
+                              href={android}
+                              aria-label="Google Play Store Link">
                               <Icon name="PlayStore" />
                             </a>
                           )}

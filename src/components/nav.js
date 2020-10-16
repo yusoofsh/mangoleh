@@ -177,11 +177,13 @@ const Nav = ({ isHome }) => {
             <TransitionGroup component={null}>
               {isMounted &&
                 navLinks &&
-                navLinks.map(({ url, name }, i) => (
-                  <CSSTransition key={i} classNames={fadeDownClass}>
+                navLinks.map(({ url, name }, index) => (
+                  <CSSTransition key={index} classNames={fadeDownClass}>
                     <li
-                      key={i}
-                      style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                      key={index}
+                      style={{
+                        transitionDelay: `${isHome ? index * 100 : 0}ms`,
+                      }}>
                       <Link to={url}>{name}</Link>
                     </li>
                   </CSSTransition>

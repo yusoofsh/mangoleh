@@ -162,7 +162,9 @@ const Projects = () => {
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, index) =>
+      sr.reveal(ref, srConfig(i * 100)),
+    );
   }, []);
 
   const GRID_LIMIT = 6;
@@ -174,13 +176,16 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      <Link
+        className="inline-link archive-link"
+        to="/archive"
+        ref={revealArchiveLink}>
         view the archive
       </Link>
 
       <TransitionGroup className="projects-grid">
         {projectsToShow &&
-          projectsToShow.map(({ node }, i) => {
+          projectsToShow.map(({ node }, index) => {
             const { frontmatter, html } = node;
             const { github, external, title, tech } = frontmatter;
 
@@ -195,7 +200,9 @@ const Projects = () => {
                   ref={el => (revealProjects.current[i] = el)}
                   tabIndex="0"
                   style={{
-                    transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
+                    transitionDelay: `${
+                      i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0
+                    }ms`,
                   }}>
                   <div className="project-inner">
                     <header>
@@ -228,7 +235,7 @@ const Projects = () => {
                     <footer>
                       {tech && (
                         <ul className="project-tech-list">
-                          {tech.map((tech, i) => (
+                          {tech.map((tech, index) => (
                             <li key={i}>{tech}</li>
                           ))}
                         </ul>

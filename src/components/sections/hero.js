@@ -68,19 +68,13 @@ const Hero = () => {
     </p>
   );
 
-  const five = (
-    <a href={`mailto:${email}`} className="email-link">
-      Get In Touch
-    </a>
-  );
-
-  const items = [one, two, three, four, five];
+  const items = [one, two, three, four];
 
   return (
     <StyledHeroSection>
       <TransitionGroup component={null}>
         {isMounted &&
-          items.map((item, i) => (
+          items.map((item, index) => (
             <CSSTransition key={i} classNames="fadeup">
               <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
             </CSSTransition>
