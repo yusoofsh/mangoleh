@@ -156,7 +156,7 @@ const Nav = ({ isHome }) => {
       <StyledNav>
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames={fadeClass}>
+            <CSSTransition classNames={fadeClass} timeout={500}>
               <div className="logo" tabIndex="-1">
                 {isHome ? (
                   <a href="/" aria-label="home">
@@ -178,7 +178,10 @@ const Nav = ({ isHome }) => {
               {isMounted &&
                 navLinks &&
                 navLinks.map(({ url, name }, index) => (
-                  <CSSTransition key={index} classNames={fadeDownClass}>
+                  <CSSTransition
+                    key={index}
+                    classNames={fadeDownClass}
+                    timeout={500}>
                     <li
                       key={index}
                       style={{
@@ -193,7 +196,7 @@ const Nav = ({ isHome }) => {
 
           <TransitionGroup component={null}>
             {isMounted && (
-              <CSSTransition classNames={fadeDownClass}>
+              <CSSTransition classNames={fadeDownClass} timeout={500}>
                 <div
                   style={{
                     transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms`,
@@ -209,7 +212,7 @@ const Nav = ({ isHome }) => {
 
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames={fadeClass}>
+            <CSSTransition classNames={fadeClass} timeout={500}>
               <Menu />
             </CSSTransition>
           )}
