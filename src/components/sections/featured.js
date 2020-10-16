@@ -271,7 +271,7 @@ const Featured = () => {
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
     revealProjects.current.forEach((ref, index) =>
-      sr.reveal(ref, srConfig(i * 100)),
+      sr.reveal(ref, srConfig(index * 100)),
     );
   }, []);
 
@@ -290,7 +290,7 @@ const Featured = () => {
             return (
               <StyledProject
                 key={index}
-                ref={el => (revealProjects.current[i] = el)}>
+                ref={el => (revealProjects.current[index] = el)}>
                 <div className="project-content">
                   <p className="project-overline">Featured Project</p>
                   <h3 className="project-title">{title}</h3>
