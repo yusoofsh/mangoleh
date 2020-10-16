@@ -1,82 +1,31 @@
 <h1 align="center">
-  johnc.ai
+  🤹 MANGOLEH
 </h1>
 <p align="center">
-  The second iteration of <a href="https://johnc.ai" target="_blank">johnc.ai</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>. All credit goes to Brittany Chiang for coding up the fourth iteration of her website, which is the base for this website.
+  The third iteration of <a href="https://www.yusoof.io" target="_blank">yusoof.io</a> built with <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>.
+  All credit goes to Brittany Chiang for coding up the fourth iteration of her website, which is the base for this website.
 </p>
-<p align="center">
-  Previous iterations by Britanny:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
-</p>
-
-![demo](https://raw.githubusercontent.com/johncai117/johncai117.github.io/main/src/images/demo.png)
-
-## 🚨 Forking this repo (please read!)
-
-This is forked from Brittany's repo. She has kindly given permission to fork her repo as long as credit is given. Again, thanks Brittany for the permission and please kindly credit her if you decide to fork the repo too.
-
-## Edits that I have made
-
-Having had little experience with the latest tools in web development, I decided to try it out for myself so that I can learn some useful frontend web dev skills. This started off with spending 2 afternoons going through <a href="https://www.gatsbyjs.com/tutorial/" target="_blank">Gatsby tutorial</a>, which quickly got me up to speed with the basics of the language.
-
-Following which, I spent another afternoon looking at Brittany Chiang's code and modifying the parts that needed to be changed. It's a fairly intuitive process, especially as she comments her code well. A difficulty came in changing the logos, which my good friend <a href="https://github.com/hivestrung" target="_blank">Shiv Gunter</a> did warn me about. Thankfully, after learning about what he did with the Scalable Vector Graphics, it was not too diffuclt to change the loggos.
-
-Deploying had a handy guide here that is rather well written so as long as you follow it, it is quite simple to deploy on Github Pages: <a href="https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/" target="_blank"> deployment tutorial</a>.
-
-## Some next steps
-
-Implement slide show within the website.
-Combine mixed media - video + images for some of the projects being showcased.
-
-### TL;DR
-
-Yes, you can fork the repo. Please give proper credit to [brittanychiang.com](https://brittanychiang.com). Thanks!
 
 ## 🛠 Installation & Set Up
 
-1. Install the Gatsby CLI
-
+1. Install dependencies
    ```sh
-   npm install -g gatsby-cli
+   yarn install
    ```
-
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
-
+2. Start the development server
    ```sh
-   nvm install
-   ```
-
-3. Install dependencies
-
-   ```sh
-   yarn
-   ```
-
-4. Start the development server
-
-   ```sh
-   npm start
+   yarn run develop
    ```
 
 ## 🚀 Building and Running for Production
 
 1. Generate a full static production build
-
    ```sh
-   npm run build
+   yarn run build
    ```
-
-1. Preview the site as it will appear once deployed
-
+2. Preview the site as it will appear once deployed
    ```sh
-   npm run serve
+   yarn run serve
    ```
 
 ## 🎨 Color Reference

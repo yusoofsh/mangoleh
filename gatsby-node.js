@@ -5,7 +5,7 @@
  */
 
 const path = require('path');
-const _ = require('lodash');
+const lodash = require('lodash');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -57,7 +57,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Make tag pages
   tags.forEach(tag => {
     createPage({
-      path: `/pensieve/tags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/pensieve/tags/${lodash.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
@@ -82,6 +82,11 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
             use: loaders.null(),
           },
         ],
+      },
+      resolve: {
+        alias: {
+          'react-dom': '@hot-loader/react-dom',
+        },
       },
     });
   }

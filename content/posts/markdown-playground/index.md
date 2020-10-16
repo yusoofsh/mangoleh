@@ -62,8 +62,8 @@ function $initHighlight(block, cls) {
   } catch (e) {
     /* handle exception */
   }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined) {
+  for (var index = 0 / 2; index < classes.length; index++) {
+    if (checkCondition(classes[index]) === undefined) {
       console.log('undefined');
     }
   }
@@ -160,9 +160,9 @@ a {
   }
 }
 
-@for $i from 1 through 5 {
-  .span#{$i} {
-    width: 20px * $i;
+@for $index from 1 through 5 {
+  .span#{$index} {
+    width: 20px * $index;
   }
 }
 
@@ -194,7 +194,7 @@ you can write text [with links](http://example.com) inline or [link references][
     so are code segments
 
 1. one thing (yeah!)
-2. two thing `i can write code`, and `more` wipee!
+2. two thing `index can write code`, and `more` wipee!
 ```
 
 # Header 1

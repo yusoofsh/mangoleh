@@ -82,7 +82,7 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(10%) contrast(1);
+      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
@@ -100,7 +100,7 @@ const StyledPic = styled.div`
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--white);
+      background-color: var(--navy);
       mix-blend-mode: screen;
     }
 
@@ -116,7 +116,10 @@ const StyledPic = styled.div`
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.jpg" }) {
+      avatar: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "me.jpg" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -133,13 +136,10 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Computer Vision, Machine Learning',
-    'Natural Language Processing',
-    'Statistics, Econometrics',
-    'PySpark, SQL, Databricks',
-    'PyTorch, TensorFlow',
-    'Python, R, C++',
-    'React, Gatsby, Javascript',
+    'Flutter, Mobile Development',
+    'Data Science, Machine Learning',
+    'Firebase, Development Platform',
+    'Dart, Python, Kotlin, TypeScript',
   ];
 
   return (
@@ -149,23 +149,26 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm John, a software engineer based in Singapore. </p>
+            <p>Hello! I'm Yusoof, a software engineer based in Bandung, ID.</p>
 
             <p>
-              I enjoy building machine learning models that have a real-world impact on people's
-              lives. My goal is to build ML systems that adapt the latest state-of-the-art
-              algorithms to produce scalable solutions.
+              I'm a Mobile Developer{' '}
+              <a href="https://github.com/viva-IT">@Akakia</a> and{' '}
+              <a href="https://360solusiteknologi.co.id">
+                @360 Solusi Teknologi
+              </a>{' '}
+              with experience building a beautiful mobile application with{' '}
+              <a href="https://flutter.dev">Flutter</a> for medical
+              consultation, IoT emergency dispatcher and real-time notification.
+              Was previously{' '}
+              <a href="https://arcacorp.com">@Arca International</a>.
             </p>
 
             <p>
-              I have graduated with a Masters from{' '}
-              <a href="https://bcf.princeton.edu/master-in-finance/">Princeton University</a>,
-              specializing in Financial Engineering and Machine Learning. At Princeton, I presented
-              my research on deep learning for computer vision at{' '}
-              <a href="https://www.learning-with-limited-labels.com/challenge">CVPR 2020 VL3</a>.
-              After graduating, I worked in the Data Science and Artificial Intelligence division at{' '}
-              <a href="https://www.tech.gov.sg">GovTech Singapore</a>, where we build AI Platforms
-              for Singapore's largest job portal.
+              I have graduated with from{' '}
+              <a href="https://smkn4malang.sch.id">@Grafika</a>, specializing in
+              Software Engineering. At Grafika, I learn so much basic
+              programming building-blocks.
             </p>
 
             <p>Here's what I've been up to lately: </p>
@@ -178,7 +181,11 @@ const About = () => {
 
         <StyledPic>
           <div className="wrapper">
-            <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" className="img" />
+            <Img
+              fluid={data.avatar.childImageSharp.fluid}
+              alt="Avatar"
+              className="img"
+            />
           </div>
         </StyledPic>
       </div>

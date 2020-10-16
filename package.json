@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
-  "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "name": "mangoleh",
+  "description": "Personal Website V3",
+  "version": "0.1.0",
+  "author": "Yu Soof <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/fouyos/mangoleh"
   },
   "keywords": [
     "gatsby"
@@ -16,7 +16,6 @@
     "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -36,11 +35,10 @@
   "dependencies": {
     "animejs": "^3.2.1",
     "babel-plugin-styled-components": "^1.11.1",
-    "gatsby": "^2.24.74",
+    "gatsby": "^2.24.76",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-google-analytics": "^2.3.18",
     "gatsby-plugin-manifest": "^2.4.34",
-    "gatsby-plugin-netlify": "^2.3.17",
     "gatsby-plugin-offline": "^3.2.31",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-robots-txt": "^1.5.3",
@@ -66,15 +64,18 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "@upstatement/eslint-config": "0.4.3",
-    "@upstatement/prettier-config": "^0.3.0",
+    "@hot-loader/react-dom": "^17.0.0-rc.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.11.0",
+    "eslint": "7.11.0",
+    "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.21.4",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.21.4",
+    "eslint-plugin-react-hooks": "4.1.2",
     "gatsby-remark-code-titles": "^1.1.0",
-    "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2"

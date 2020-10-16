@@ -1,14 +1,18 @@
 module.exports = {
-  email: 'jjcai@alumni.princeton.edu',
+  email: 'fuzuyx@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/johncai117',
+      url: 'https://github.com/fouyos',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/caijohn',
+      url: 'https://www.linkedin.com/in/oyuosf',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://www.linkedin.com/in/oyuosf',
     },
   ],
 

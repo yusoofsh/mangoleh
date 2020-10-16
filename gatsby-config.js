@@ -2,12 +2,13 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'John Cai',
-    description:
-      'I\'m a software engineer with experience building machine learning models for computer vision, recommender systems and macroeconomic forecasting.',
-    siteUrl: 'https://johnc.ai', // No trailing slash allowed!
+    title: 'Personal | Yu Soof',
+    description: `I'm a software engineer with experience building mobile application
+      for medical consultation, IoT emergency dispatcher
+      and real-time notification.`,
+    siteUrl: 'https://yusoof.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@johncai117',
+    twitterUsername: '@ouysof',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'JohnCai',
-        short_name: 'JohnCai',
+        name: 'Yu Soof',
+        short_name: 'Yu',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
@@ -76,7 +77,7 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.green },
+              tracedSVG: { color: config.colors.blue },
             },
           },
           {
@@ -151,7 +152,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingId: 'UA-96105344-2',
       },
     },
   ],

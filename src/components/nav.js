@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
-import { loaderDelay } from '@utils';
 import { useScrollDirection } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
@@ -147,16 +146,17 @@ const Nav = ({ isHome }) => {
     };
   }, []);
 
-  const timeout = isHome ? loaderDelay : 0;
   const fadeClass = isHome ? 'fade' : '';
   const fadeDownClass = isHome ? 'fadedown' : '';
 
   return (
-    <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
+    <StyledHeader
+      scrollDirection={scrollDirection}
+      scrolledToTop={scrolledToTop}>
       <StyledNav>
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames={fadeClass} timeout={timeout}>
+            <CSSTransition classNames={fadeClass}>
               <div className="logo" tabIndex="-1">
                 {isHome ? (
                   <a href="/" aria-label="home">
@@ -178,8 +178,10 @@ const Nav = ({ isHome }) => {
               {isMounted &&
                 navLinks &&
                 navLinks.map(({ url, name }, i) => (
-                  <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
-                    <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                  <CSSTransition key={i} classNames={fadeDownClass}>
+                    <li
+                      key={i}
+                      style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
                       <Link to={url}>{name}</Link>
                     </li>
                   </CSSTransition>
@@ -189,8 +191,11 @@ const Nav = ({ isHome }) => {
 
           <TransitionGroup component={null}>
             {isMounted && (
-              <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+              <CSSTransition classNames={fadeDownClass}>
+                <div
+                  style={{
+                    transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms`,
+                  }}>
                   <a href="/resume.pdf" className="resume-button">
                     Resume
                   </a>
@@ -202,7 +207,7 @@ const Nav = ({ isHome }) => {
 
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames={fadeClass} timeout={timeout}>
+            <CSSTransition classNames={fadeClass}>
               <Menu />
             </CSSTransition>
           )}
