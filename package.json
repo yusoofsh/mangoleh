@@ -2,7 +2,7 @@
   "name": "mangoleh",
   "description": "Personal Website V3",
   "version": "0.1.0",
-  "author": "Yu Soof <brittany.chiang@gmail.com>",
+  "author": "Yu Soof <fuzuyx@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/fouyos/mangoleh"
@@ -13,7 +13,6 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve": "gatsby serve",
