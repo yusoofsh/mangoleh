@@ -2,12 +2,10 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Personal | Yu Soof',
-    description: `I'm a software engineer with experience building mobile application
-      for medical consultation, IoT emergency dispatcher
-      and real-time notification.`,
+    title: 'Yu Soof',
+    description: 'Na am gud.',
     siteUrl: 'https://yusoof.io', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/src/images/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ouysof',
   },
   plugins: [
