@@ -2,11 +2,11 @@
   🤹 MANGOLEH
 </h1>
 <p align="center">
-  The third iteration of <a href="https://www.yusoof.io" target="_blank">yusoof.io</a> built with <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>.
+  The third iteration of <a href="https://www.yusoof.io" target="_blank">yusoof.io</a> built with <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> and hosted with <a href="https://www.vercel.com" target="_blank">Vercel</a>.
   All credit goes to Brittany Chiang for coding up the fourth iteration of her website, which is the base for this website.
 </p>
 
-![Demo!](/src/images/demo.png)
+![Demo](/src/images/demo.png)
 
 ## 🛠 Installation & Set Up
 
