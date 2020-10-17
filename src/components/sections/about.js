@@ -118,7 +118,7 @@ const About = () => {
     query {
       avatar: file(
         sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "me.jpg" }
+        relativePath: { eq: "me.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
