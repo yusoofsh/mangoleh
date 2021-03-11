@@ -1,0 +1,13 @@
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "defaultTitle": "Yu Soof",
+        "defaultDescription": "Na am gud.",
+        "siteUrl": "https://yusoof.io",
+        "defaultImage": "/src/images/demo.png",
+        "twitterUsername": "@ouysof"
+      }
+    }
+  }
+}

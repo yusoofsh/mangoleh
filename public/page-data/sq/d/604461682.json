@@ -1,0 +1,68 @@
+{
+  "data": {
+    "jobs": {
+      "edges": [
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Computational Scientist Intern",
+              "company": "GovTech",
+              "location": "Singapore",
+              "range": "May 2020 - August 2020",
+              "url": "https://www.tech.gov.sg/"
+            },
+            "html": "<ul>\n<li>Engineered new data fields and performed causal inference in PySpark to monitor and forecast labour market trends during the COVID crisis.</li>\n<li>Back-tested, A/B tested and deployed a content-based improvement to the ML recommender system that would improve CTR by around 3%.</li>\n<li>Utilized LDA and NLP to automatically extract insights from user search trends and skills in demand, and used SQL to produce a Redshift dashboard that automated policy-maker workflows.</li>\n</ul>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Lead Author",
+              "company": "CVPR 2020 VL3",
+              "location": "Seattle, Washington",
+              "range": "February 2020 - June 2020",
+              "url": "https://www.learning-with-limited-labels.com/"
+            },
+            "html": "<ul>\n<li>Won 2nd Place in the Cross-Domain Few-Shot Learning Challenge against full AI teams from Alibaba and DiDi.</li>\n<li>Developed a novel meta-learning algorithm that combines Model-Agnostic Meta-Learning with Graph Neural Networks in PyTorch.</li>\n<li>Implemented data augmentation and ensemble methods to facilitate transfer learning and further improve accuracy.</li>\n<li>Delivered an oral presentation (~13%) at the CVPR 2020 Visual Learning with Limited Labels (VL3) Workshop.</li>\n</ul>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Digital Strategy Intern",
+              "company": "Smart Nation Office",
+              "location": "Singapore",
+              "range": "June - August 2018",
+              "url": "https://www.smartnation.gov.sg/"
+            },
+            "html": "<ul>\n<li>Devised a framework to audit and rank governments apps. Presented a proposal that will make $100m of cost savings.</li>\n<li>Utilized Web Analytics to perform cluster analysis on government website functionality and user behavior.</li>\n<li>Analyzed financial transaction data to identify policies that can reduce cost and improve E-payment adoption.</li>\n<li>Estimated marginal and average cost of transactions over different electronic payment systems. Built projections of electronic payment volumes and cost composition.</li>\n</ul>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Research Assistant",
+              "company": "University of Cambridge",
+              "location": "Cambridge, UK",
+              "range": "Dec 2017 - Jan 2018",
+              "url": "https://www.cam.ac.uk"
+            },
+            "html": "<ul>\n<li>Performed econometric research for Prof Toke Aidt on the Fiscal Implications of Voting Patterns in the UK.</li>\n<li>Utilized a difference-in-difference technique to perform causal inference on the effects of Women's Suffrage.</li>\n</ul>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Business Strategy Intern",
+              "company": "Arcstone",
+              "location": "Singapore",
+              "range": "July - September 2017",
+              "url": "https://www.arcstone.co"
+            },
+            "html": "<ul>\n<li>Conducted competitor and growth analysis that helped Arcstone secure an official partnership with McKinsey. Arcstone was chosen out of 200 digital manufacturing start-ups in Singapore.</li>\n<li>Built revenue models and formulated a data-driven pricing strategy for Arcstone's manufacturing IoT platform.</li>\n<li>Acquired clients from Fortune 500 companies and worked with Chief Executive Officer to expand into Vietnam and Indonesia.</li>\n</ul>"
+          }
+        }
+      ]
+    }
+  }
+}
