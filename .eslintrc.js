@@ -7,10 +7,5 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     ],
-    settings: {
-      'import/resolver': {
-        typescript: {},
-      },
-    },
   },
 };
