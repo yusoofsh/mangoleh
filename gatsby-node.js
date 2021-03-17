@@ -83,11 +83,6 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
           },
         ],
       },
-      resolve: {
-        alias: {
-          'react-dom': '@hot-loader/react-dom',
-        },
-      },
     });
   }
 
