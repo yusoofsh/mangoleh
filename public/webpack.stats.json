@@ -1,0 +1,22 @@
+{
+  "errors": [],
+  "warnings": [],
+  "namedChunkGroups": {
+    "polyfill": {
+      "chunks": ["polyfill"],
+      "assets": ["polyfill.js"],
+      "children": {},
+      "childAssets": {}
+    },
+    "commons": {
+      "chunks": ["commons"],
+      "assets": ["commons.js"],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "assetsByChunkName": {
+    "polyfill": ["polyfill.js"],
+    "commons": ["commons.js"]
+  }
+}
