@@ -1,11 +1,3 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
-  rules: {
-    'react/jsx-filename-extension': [
-      1,
-      {
-        extensions: ['.js', '.jsx'],
-      },
-    ],
-  },
+  extends: ['eslint:recommended', 'plugin:react/recommended', '@upstatement/eslint-config/react'],
 };

@@ -6,12 +6,7 @@
           "node": {
             "frontmatter": {
               "title": "Neural Machine Translation",
-              "tech": [
-                "Python",
-                "PyTorch",
-                "NLTK",
-                "Natural Language Processing"
-              ],
+              "tech": ["Python", "PyTorch", "NLTK", "Natural Language Processing"],
               "github": "https://github.com/johncai117/neural-machine-translation",
               "external": null
             },
@@ -55,12 +50,7 @@
           "node": {
             "frontmatter": {
               "title": "Named Entity Recognition",
-              "tech": [
-                "Python",
-                "PyTorch",
-                "scikit-learn",
-                "Natural Language Processing"
-              ],
+              "tech": ["Python", "PyTorch", "scikit-learn", "Natural Language Processing"],
               "github": "https://github.com/johncai117/named-entity-recognition",
               "external": null
             },
@@ -71,14 +61,7 @@
           "node": {
             "frontmatter": {
               "title": "Predicting Economic Recessions using NLP",
-              "tech": [
-                "Python",
-                "MATLAB",
-                "BeautifulSoup",
-                "Selenium",
-                "NLTK",
-                "scikit-learn"
-              ],
+              "tech": ["Python", "MATLAB", "BeautifulSoup", "Selenium", "NLTK", "scikit-learn"],
               "github": "",
               "external": "https://www.academia.edu/40813014/Predicting_Economic_Recessions_using_Natural_Language_Processing"
             },
@@ -89,13 +72,7 @@
           "node": {
             "frontmatter": {
               "title": "Predicting Business Confidence from Twitter",
-              "tech": [
-                "Python",
-                "BeautifulSoup",
-                "Selenium",
-                "Twitterscraper",
-                "NLTK"
-              ],
+              "tech": ["Python", "BeautifulSoup", "Selenium", "Twitterscraper", "NLTK"],
               "github": "",
               "external": "https://www.slideshare.net/johncai117/predicting-business-confidence-using-nlp"
             },

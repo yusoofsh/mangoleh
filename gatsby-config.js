@@ -2,12 +2,13 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Yu Soof',
-    description: 'Na am gud.',
+    title: 'Yusoof',
+    description: 'It is what it is.',
     siteUrl: 'https://yusoof.io', // No trailing slash allowed!
     image: '/src/images/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ouysof',
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
@@ -18,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Yu Soof',
+        name: 'Yusoof',
         short_name: 'Yu',
         start_url: '/',
         background_color: config.colors.darkNavy,

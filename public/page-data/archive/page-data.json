@@ -23,12 +23,7 @@
               "frontmatter": {
                 "date": "2020-06-01",
                 "title": "Neural Machine Translation",
-                "tech": [
-                  "Python",
-                  "PyTorch",
-                  "NLTK",
-                  "Natural Language Processing"
-                ],
+                "tech": ["Python", "PyTorch", "NLTK", "Natural Language Processing"],
                 "github": "https://github.com/johncai117/neural-machine-translation",
                 "external": null,
                 "company": "Princeton University"
@@ -112,12 +107,7 @@
               "frontmatter": {
                 "date": "2020-01-01",
                 "title": "Named Entity Recognition",
-                "tech": [
-                  "Python",
-                  "PyTorch",
-                  "scikit-learn",
-                  "Natural Language Processing"
-                ],
+                "tech": ["Python", "PyTorch", "scikit-learn", "Natural Language Processing"],
                 "github": "https://github.com/johncai117/named-entity-recognition",
                 "external": null,
                 "company": "Princeton University"
@@ -150,14 +140,7 @@
               "frontmatter": {
                 "date": "2019-06-01",
                 "title": "Predicting Economic Recessions using NLP",
-                "tech": [
-                  "Python",
-                  "MATLAB",
-                  "BeautifulSoup",
-                  "Selenium",
-                  "NLTK",
-                  "scikit-learn"
-                ],
+                "tech": ["Python", "MATLAB", "BeautifulSoup", "Selenium", "NLTK", "scikit-learn"],
                 "github": "",
                 "external": "https://www.academia.edu/40813014/Predicting_Economic_Recessions_using_Natural_Language_Processing",
                 "company": "University of Cambridge"
@@ -170,13 +153,7 @@
               "frontmatter": {
                 "date": "2019-02-01",
                 "title": "Predicting Business Confidence from Twitter",
-                "tech": [
-                  "Python",
-                  "BeautifulSoup",
-                  "Selenium",
-                  "Twitterscraper",
-                  "NLTK"
-                ],
+                "tech": ["Python", "BeautifulSoup", "Selenium", "Twitterscraper", "NLTK"],
                 "github": "",
                 "external": "https://www.slideshare.net/johncai117/predicting-business-confidence-using-nlp",
                 "company": "University of Cambridge"
@@ -215,11 +192,5 @@
     },
     "pageContext": {}
   },
-  "staticQueryHashes": [
-    "1994492073",
-    "3391063840",
-    "3618961439",
-    "3995991134",
-    "604461682"
-  ]
+  "staticQueryHashes": ["1994492073", "3391063840", "3618961439", "3995991134", "604461682"]
 }

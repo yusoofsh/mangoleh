@@ -5,11 +5,11 @@
         {
           "node": {
             "frontmatter": {
-              "title": "Computational Scientist Intern",
-              "company": "GovTech",
-              "location": "Singapore",
-              "range": "May 2020 - August 2020",
-              "url": "https://www.tech.gov.sg/"
+              "title": "Flutter Developer",
+              "company": "Akakia",
+              "location": "Banten",
+              "range": "September 2020 - Present",
+              "url": null
             },
             "html": "<ul>\n<li>Engineered new data fields and performed causal inference in PySpark to monitor and forecast labour market trends during the COVID crisis.</li>\n<li>Back-tested, A/B tested and deployed a content-based improvement to the ML recommender system that would improve CTR by around 3%.</li>\n<li>Utilized LDA and NLP to automatically extract insights from user search trends and skills in demand, and used SQL to produce a Redshift dashboard that automated policy-maker workflows.</li>\n</ul>"
           }

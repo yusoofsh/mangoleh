@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -116,10 +116,7 @@ const StyledPic = styled.div`
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      avatar: file(
-        sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "me.png" }
-      ) {
+      avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.png" }) {
         childImageSharp {
           fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -137,7 +134,7 @@ const About = () => {
 
   const skills = [
     'Flutter, Mobile Development',
-    'Data Science, Machine Learning',
+    'Data Science, Applied AI',
     'Firebase, Development Platform',
     'Dart, Python, Kotlin, TypeScript',
   ];
@@ -152,41 +149,30 @@ const About = () => {
             <p>Hello! I'm Yusoof, a software engineer based in Bandung, ID.</p>
 
             <p>
-              I'm a Mobile Developer{' '}
-              <a href="https://github.com/viva-IT">@Akakia</a> and{' '}
-              <a href="https://360solusiteknologi.co.id">
-                @360 Solusi Teknologi
-              </a>{' '}
-              with experience building a beautiful mobile application with{' '}
-              <a href="https://flutter.dev">Flutter</a> for medical
-              consultation, IoT emergency dispatcher and real-time notification.
-              Was previously{' '}
-              <a href="https://arcacorp.com">@Arca International</a>.
+              I'm a Mobile Developer <a href="https://github.com/viva-IT">@Akakia</a> and{' '}
+              <a href="https://360solusiteknologi.co.id">@360 Solusi Teknologi</a> with experience
+              building a beautiful mobile application with <a href="https://flutter.dev">Flutter</a>{' '}
+              for medical consultation, IoT emergency dispatcher and real-time notification. Was
+              previously <a href="https://arcacorp.com">@Arca International</a>.
             </p>
 
             <p>
-              I have graduated with from{' '}
-              <a href="https://smkn4malang.sch.id">@Grafika</a>, specializing in
-              Software Engineering. At Grafika, I learn so much basic
-              programming building-blocks.
+              I have graduated with from <a href="https://smkn4malang.sch.id">@Grafika</a>,
+              specializing in Software Engineering. At Grafika, I learn so much basic programming
+              building-blocks.
             </p>
 
             <p>Here's what I've been up to lately: </p>
           </div>
 
           <ul className="skills-list">
-            {skills &&
-              skills.map((skill, index) => <li key={index}>{skill}</li>)}
+            {skills && skills.map((skill, index) => <li key={index}>{skill}</li>)}
           </ul>
         </StyledText>
 
         <StyledPic>
           <div className="wrapper">
-            <Img
-              fluid={data.avatar.childImageSharp.fluid}
-              alt="Avatar"
-              className="img"
-            />
+            <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" className="img" />
           </div>
         </StyledPic>
       </div>

@@ -2,11 +2,5 @@
   "componentChunkName": "component---src-pages-404-js",
   "path": "/404.html",
   "result": { "pageContext": {} },
-  "staticQueryHashes": [
-    "1994492073",
-    "3391063840",
-    "3618961439",
-    "3995991134",
-    "604461682"
-  ]
+  "staticQueryHashes": ["1994492073", "3391063840", "3618961439", "3995991134", "604461682"]
 }

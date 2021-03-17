@@ -1,10 +1,9 @@
 ---
-date: '2020-06-20'
-title: 'Computational Scientist Intern'
-company: 'GovTech'
-location: 'Singapore'
-range: 'May 2020 - August 2020'
-url: 'https://www.tech.gov.sg/'
+date: '2020-09-15'
+title: 'Flutter Developer'
+company: 'Akakia'
+location: 'Banten'
+range: 'September 2020 - Present'
 ---
 
 - Engineered new data fields and performed causal inference in PySpark to monitor and forecast labour market trends during the COVID crisis.
