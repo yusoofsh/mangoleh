@@ -44,7 +44,6 @@ const mixins = {
     color: inherit;
     position: relative;
     transition: var(--transition);
-    cursor: pointer;
     &:hover,
     &:active,
     &:focus {
@@ -59,7 +58,6 @@ const mixins = {
     text-decoration-skip-ink: auto;
     position: relative;
     transition: var(--transition);
-    cursor: pointer;
     color: var(--green);
     &:hover,
     &:focus,
@@ -105,6 +103,7 @@ const mixins = {
     &:focus,
     &:active {
       background-color: var(--green-tint);
+      outline: none;
     }
     &:after {
       display: none !important;
@@ -127,6 +126,7 @@ const mixins = {
     &:focus,
     &:active {
       background-color: var(--green-tint);
+      outline: none;
     }
     &:after {
       display: none !important;
@@ -159,6 +159,12 @@ const mixins = {
         color: var(--green);
       }
     }
+  `,
+
+  resetList: css`
+    list-style: none;
+    padding: 0;
+    margin: 0;
   `,
 };
 

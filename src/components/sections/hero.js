@@ -3,12 +3,18 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { email } from '@config';
 import { navDelay } from '@utils';
+import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
+  padding: 0;
+
+  @media (max-width: 480px) and (min-height: 700px) {
+    padding-bottom: 10vh;
+  }
 
   h1 {
     margin: 0 0 30px 4px;
@@ -41,8 +47,13 @@ const StyledHeroSection = styled.section`
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
+    if (prefersReducedMotion) {
+      return;
+    }
+
     const timeout = setTimeout(() => {
       return setIsMounted(true);
     }, navDelay);
@@ -72,14 +83,22 @@ const Hero = () => {
 
   return (
     <StyledHeroSection>
-      <TransitionGroup component={null}>
-        {isMounted &&
-          items.map((item, index) => (
-            <CSSTransition key={index} classNames="fadeup" timeout={500}>
-              <div style={{ transitionDelay: `${index + 1}00ms` }}>{item}</div>
-            </CSSTransition>
+      {prefersReducedMotion ? (
+        <>
+          {items.map((item, i) => (
+            <div key={i}>{item}</div>
           ))}
-      </TransitionGroup>
+        </>
+      ) : (
+        <TransitionGroup component={null}>
+          {isMounted &&
+            items.map((item, index) => (
+              <CSSTransition key={index} classNames="fadeup" timeout={500}>
+                <div style={{ transitionDelay: `${index + 1}00ms` }}>{item}</div>
+              </CSSTransition>
+            ))}
+        </TransitionGroup>
+      )}
     </StyledHeroSection>
   );
 };

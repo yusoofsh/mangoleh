@@ -16,12 +16,9 @@
     "develop": "gatsby develop --open",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "clean": "gatsby clean",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -71,8 +68,8 @@
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-react": "7.21.4",
     "gatsby-remark-code-titles": "^1.1.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.1.2",
     "prettier": "^2.0.4"
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   IconAppStore,
+  IconBookmark,
   IconCodepen,
   IconExternal,
   IconFolder,
@@ -9,18 +10,18 @@ import {
   IconGitHub,
   IconInstagram,
   IconLinkedin,
-  IconLocation,
   IconLogo,
   IconPlayStore,
   IconStar,
   IconTwitter,
-  IconZap,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
   switch (name) {
     case 'AppStore':
       return <IconAppStore />;
+    case 'Bookmark':
+      return <IconBookmark />;
     case 'Codepen':
       return <IconCodepen />;
     case 'External':
@@ -35,8 +36,6 @@ const Icon = ({ name }) => {
       return <IconInstagram />;
     case 'Linkedin':
       return <IconLinkedin />;
-    case 'Location':
-      return <IconLocation />;
     case 'Logo':
       return <IconLogo />;
     case 'PlayStore':
@@ -45,8 +44,6 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
-    case 'Zap':
-      return <IconZap />;
     default:
       return <IconExternal />;
   }

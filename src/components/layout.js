@@ -10,35 +10,6 @@ if (typeof window !== 'undefined') {
   require('smooth-scroll')('a[href*="#"]');
 }
 
-const SkipToContentLink = styled.a`
-  position: absolute;
-  top: auto;
-  left: -999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  z-index: -99;
-  &:focus,
-  &:active {
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    padding: 18px 23px;
-    outline: 0;
-    border-radius: var(--border-radius);
-    background-color: var(--light-navy);
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-sm);
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: auto;
-    transition: var(--transition);
-    z-index: 99;
-  }
-`;
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -48,22 +19,6 @@ const StyledContent = styled.div`
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
-
-  useEffect(() => {
-    if (isLoading) {
-      return;
-    }
-    if (location.hash) {
-      const id = location.hash.substring(1); // location.hash without the '#'
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView();
-          el.focus();
-        }
-      }, 0);
-    }
-  }, [isLoading]);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
@@ -79,8 +34,23 @@ const Layout = ({ children, location }) => {
   };
 
   useEffect(() => {
+    if (isLoading) {
+      return;
+    }
+
+    if (location.hash) {
+      const id = location.hash.substring(1); // location.hash without the '#'
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView();
+          el.focus();
+        }
+      }, 0);
+    }
+
     handleExternalLinks();
-  }, []);
+  }, [isLoading]);
 
   return (
     <>
@@ -90,7 +60,9 @@ const Layout = ({ children, location }) => {
         <ThemeProvider theme={theme}>
           <GlobalStyle />
 
-          <SkipToContentLink href="#content">Skip to Content</SkipToContentLink>
+          <a className="skip-to-content" href="#content">
+            Skip to Content
+          </a>
 
           <StyledContent>
             <Nav isHome={isHome} />

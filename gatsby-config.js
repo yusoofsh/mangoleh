@@ -8,12 +8,6 @@ module.exports = {
     image: '/src/images/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ouysof',
   },
-  flags: {
-    FAST_DEV: true,
-    FAST_REFRESH: true,
-    PRESERVE_WEBPACK_CACHE: true,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,

@@ -265,7 +265,9 @@ const Menu = () => {
               <ol>
                 {navLinks.map(({ url, name }, index) => (
                   <li key={index}>
-                    <Link to={url}>{name}</Link>
+                    <Link to={url} onClick={() => setMenuOpen(false)}>
+                      {name}
+                    </Link>
                   </li>
                 ))}
               </ol>
