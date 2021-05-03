@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
-import { usePrefersReducedMotion, useScrollDirection } from '@hooks';
+import { loaderDelay } from '@utils';
+import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
 
@@ -66,8 +67,8 @@ const StyledNav = styled.nav`
 
     a {
       color: var(--green);
-      width: 120px;
-      height: 60px;
+      width: 42px;
+      height: 42px;
 
       &:hover,
       &:focus {
@@ -153,6 +154,7 @@ const Nav = ({ isHome }) => {
     };
   }, []);
 
+  const timeout = isHome ? loaderDelay : 0;
   const fadeClass = isHome ? 'fade' : '';
   const fadeDownClass = isHome ? 'fadedown' : '';
 
@@ -201,7 +203,7 @@ const Nav = ({ isHome }) => {
           <>
             <TransitionGroup component={null}>
               {isMounted && (
-                <CSSTransition classNames={fadeClass} timeout={500}>
+                <CSSTransition classNames={fadeClass} timeout={timeout}>
                   <>{Logo}</>
                 </CSSTransition>
               )}
@@ -213,7 +215,7 @@ const Nav = ({ isHome }) => {
                   {isMounted &&
                   navLinks &&
                   navLinks.map(({ url, name }, index) => (
-                    <CSSTransition key={index} classNames={fadeDownClass} timeout={500}>
+                    <CSSTransition key={index} classNames={fadeDownClass} timeout={timeout}>
                       <li
                         key={index}
                         style={{
@@ -228,7 +230,7 @@ const Nav = ({ isHome }) => {
 
               <TransitionGroup component={null}>
                 {isMounted && (
-                  <CSSTransition classNames={fadeDownClass} timeout={500}>
+                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                     <div
                       style={{
                         transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms`,
@@ -242,7 +244,7 @@ const Nav = ({ isHome }) => {
 
             <TransitionGroup component={null}>
               {isMounted && (
-                <CSSTransition classNames={fadeClass} timeout={500}>
+                <CSSTransition classNames={fadeClass} timeout={timeout}>
                   <Menu/>
                 </CSSTransition>
               )}

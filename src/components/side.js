@@ -32,7 +32,7 @@ const Side = ({ children, isHome, orientation }) => {
     if (!isHome || prefersReducedMotion) {
       return;
     }
-    const timeout = setTimeout(() => setIsMounted(true));
+    const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -43,7 +43,7 @@ const Side = ({ children, isHome, orientation }) => {
       ) : (
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames="fade" timeout={500}>
+            <CSSTransition classNames={isHome ? 'fade' : ''} timeout={isHome ? loaderDelay : 0}>
               {children}
             </CSSTransition>
           )}
