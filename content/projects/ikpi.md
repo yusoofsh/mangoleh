@@ -1,5 +1,5 @@
 ---
-date: '2020-07-24'
+date: '2020-08-24'
 title: 'IKPI Mobile App'
 github: ''
 external: 'https://demo.ikpi.or.id'
