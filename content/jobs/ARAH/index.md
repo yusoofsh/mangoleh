@@ -1,7 +1,7 @@
 ---
 date: '2020-09-15'
 title: 'Flutter Developer'
-company: 'Arah Akakia Teknologi'
+company: 'ARAH Akakia Teknologi'
 location: 'Banten'
 range: 'Sep 2020 - Present'
 url: ''
