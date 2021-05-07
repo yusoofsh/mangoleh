@@ -12,4 +12,4 @@ company: ''
 showInProjects: true
 ---
 
-This site. Based on brittanychiang.com.
+This site. It is a fork of brittanychiang.com
