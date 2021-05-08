@@ -8970,17 +8970,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-analytics@npm:^2.3.18":
-  version: 2.3.18
-  resolution: "gatsby-plugin-google-analytics@npm:2.3.18"
+"gatsby-plugin-google-gtag@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-plugin-google-gtag@npm:3.4.0"
   dependencies:
-    "@babel/runtime": ^7.11.2
-    minimatch: 3.0.4
+    "@babel/runtime": ^7.12.5
+    minimatch: ^3.0.4
   peerDependencies:
-    gatsby: ^2.0.0
-    react: ^16.4.2
-    react-dom: ^16.4.2
-  checksum: 620215aca67ba613d87a5128e884b94f26759a524787bda1e6c475991771f7298f210b6cbc987258ddf877ac323c4142c25729ff9841e5df3e92e5198af7cb56
+    gatsby: ^3.0.0-next.0
+    react: ^16.9.0 || ^17.0.0
+    react-dom: ^16.9.0 || ^17.0.0
+  checksum: 55fd35acb4191bf36cde35fab5064f50746058d02a60d34ceed147199ed91e2c6de62683dc92682e59c31f75f9851a295aff99efe7c5876bf056977be29fbd34
   languageName: node
   linkType: hard
 
@@ -12877,7 +12877,7 @@ fsevents@~2.3.1:
     eslint-plugin-react: 7.21.4
     gatsby: ^2.18.7
     gatsby-image: ^2.4.21
-    gatsby-plugin-google-analytics: ^2.3.18
+    gatsby-plugin-google-gtag: ^3.4.0
     gatsby-plugin-manifest: ^2.4.34
     gatsby-plugin-offline: ^3.2.31
     gatsby-plugin-react-helmet: ^3.3.14
