@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'wecy@pm.me',
+  email: 'yusoof@wecy.dev',
 
   socialMedia: [
     {
@@ -8,7 +8,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/oyuosf',
+      url: 'https://linkedin.com/in/oyuosf',
     },
     {
       name: 'Twitter',
