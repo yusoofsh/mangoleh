@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Yusoof',
-    description: 'It is what it is.',
-    siteUrl: 'https://yusoof.io', // No trailing slash allowed!
+    title: 'Yusoof\'s Portofolio',
+    description: 'it is what it is',
+    siteUrl: 'wecy.dev', // No trailing slash allowed!
     image: '/src/images/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ouysof',
   },
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Yusoof',
-        short_name: 'Yu',
+        name: 'Yusoof Moh',
+        short_name: 'Yusoof',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
@@ -141,9 +141,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-96105344-2',
+        trackingIds: [
+          'G-PH69C109CR',
+        ],
       },
     },
   ],
