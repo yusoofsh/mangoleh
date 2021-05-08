@@ -11,4 +11,4 @@ showInProjects: true
 
 Challenges and Projects made as part of the curriculum of Maximilian Schwarzmüller's "Flutter & Dart - The Complete Guide [2021 Edition]" course on Udemy.
 
-Note: I am learning the course's currently.
+Note: I am actively learning the course's currently.
