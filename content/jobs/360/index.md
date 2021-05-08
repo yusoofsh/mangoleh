@@ -8,5 +8,8 @@ url: 'https://360solusiteknologi.co.id'
 ---
 
 - Currently utilizes Flutter for a diverse array of client and internal projects.
+- Contribute to all phases of the development lifecycle: concept, design, build, deploy, test, release to app stores, and maintenance support.
+- Primarily focused on research & development to provide an idea like what technical stack, which methodologies to use.
 - Worked with a team of four to provide IKEA with an integrated service of delivery and parcel management that primarily focused on live logistic tracking, drivers, and warehouse.
-- Primarily focused on research & development to provide an ideas like what technical stack, which metodo
+- Continuously discover, evaluate, and implement new technologies to maximize development efficiency.
+- Embrace the remote-working culture and flexible work hours. Been working remotely for two-ish years!

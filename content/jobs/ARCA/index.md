@@ -2,7 +2,7 @@
 date: '2017-10-02'
 title: 'Junior Software Developer Intern'
 company: 'Arca International'
-location: 'North Jakarta'
+location: 'Jakarta'
 range: 'Nov 2016 - Oct 2017'
 url: 'https://www.arcacorp.com'
 ---
