@@ -1,6 +1,6 @@
 ---
 date: '2017-10-02'
-title: 'Junior Software Developer Intern'
+title: 'Software Developer Intern'
 company: 'Arca International'
 location: 'Jakarta'
 range: 'Nov 2016 - Oct 2017'

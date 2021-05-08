@@ -152,20 +152,33 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Yusoof, a software engineer based in Bandung, ID.</p>
-
             <p>
-              I'm a Mobile Developer <a href="https://github.com/viva-IT">@Akakia</a> and{' '}
-              <a href="https://360solusiteknologi.co.id">@360 Solusi Teknologi</a> with experience
-              building a beautiful mobile application with <a href="https://flutter.dev">Flutter</a>{' '}
-              for medical consultation, IoT emergency dispatcher and real-time notification. Was
-              previously <a href="https://arcacorp.com">@Arca International</a>.
+              You can call me Yusoof pronounced &quot;Yu-sof&quot;, a software engineer who works
+              remotely from Bandung or Malang, Indonesia.
             </p>
 
             <p>
-              I have graduated with from <a href="https://smkn4malang.sch.id">@Grafika</a>,
-              specializing in Software Engineering. At Grafika, I learn so much basic programming
-              building-blocks.
+              Currently working <a href="https://github.com/viva-IT">[at] ARAH Akakia Teknologi</a>{' '}
+              as Flutter Developer and{' '}
+              <a href="https://360solusiteknologi.co.id">[at] 360 Solusi Teknologi</a> as Mobile
+              Developer. Mainly focus on hybrid development. Some products and projects I've been
+              working on include medical consultation, IoT integrated, real-time notification, and
+              much more. Was previously had an amazing learning experience: Internship{' '}
+              <a href="https://arcacorp.com">[at] Arca International</a>, Freelancer{' '}
+              <a href="https://ikpi.or.id">[at] Ikatan Konsultan Pajak Indonesia</a>, and{' '}
+              <a href="https://intermediatama.com">[at] Intermediatama</a>.
+            </p>
+
+            <p>
+              Worth mentioning, that I also actively helping other folks in local communities{' '}
+              <a href="https://t.me/flutter_id">[at] Flutter Indonesia</a>. Especially with sharing
+              some insight and knowledge, you invest in yourself by being kind and grateful.
+            </p>
+
+            <p>
+              I have graduated from <a href="https://smkn4malang.sch.id">[at] Grafika</a>,
+              specializing in Software Engineering. At Grafika, I learn so many programming building
+              blocks.
             </p>
 
             <p>Here's what I've been up to lately: </p>

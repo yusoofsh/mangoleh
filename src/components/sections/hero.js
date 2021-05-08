@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { email } from '@config';
-import { navDelay, loaderDelay } from '@utils';
+import { loaderDelay, navDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
@@ -54,9 +53,7 @@ const Hero = () => {
       return;
     }
 
-    const timeout = setTimeout(() => {
-      return setIsMounted(true);
-    }, navDelay);
+    const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -64,18 +61,13 @@ const Hero = () => {
 
   const two = <h2 className="big-heading">Yusoof Mohammad SH.</h2>;
 
-  const three = (
-    <h3 className="medium-heading">
-      I build solutions for mobile application.
-    </h3>
-  );
+  const three = <h3 className="medium-heading">I build hybrid apps that scales.</h3>;
 
   const four = (
     <p>
-      I enjoy building mobile application that have a real-world impact on
-      people's lives. My goal is to build systems that adapt the
-      experimental(and contribute if nessecary) state-of-the-art frameworks to
-      produce scalable solutions.
+      I enjoy building systems that adopt the experimental(and contribute if necessary)
+      state-of-the-art approach to produce scalable solutions while making sure it is stable enough
+      to reach into production :).
     </p>
   );
 
