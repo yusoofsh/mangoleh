@@ -4,19 +4,19 @@ module.exports = {
   socialMedia: [
     {
       name: 'Telegram',
-      url: 'https://t.me/osfyuo',
+      url: 'https://t.me/yusoofsh',
     },
     {
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/oyuosf',
+      url: 'https://linkedin.com/in/yusoofsh',
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/fouyos',
+      url: 'https://github.com/yusoofsh',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/ouysof',
+      url: 'https://twitter.com/yusoofsh',
     },
   ],
 
