@@ -4,7 +4,7 @@ title: 'Software Developer Intern'
 company: 'Arca International'
 location: 'Jakarta'
 range: 'Nov 2016 - Oct 2017'
-url: 'https://www.arcacorp.com'
+url: 'https://arcacorp.com'
 ---
 
 - Experienced with all ancillary technologies for web applications: PHP, MVC, HTML, CSS, FSD, etc.

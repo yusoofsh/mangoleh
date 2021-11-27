@@ -6,7 +6,7 @@ module.exports = {
     description: 'it is what it is',
     siteUrl: 'https://www.wecy.dev', // No trailing slash allowed!
     image: '/src/images/demo.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@ouysof',
+    twitterUsername: '@yusoofsh',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Yusoof Moh',
+        name: 'Yusoof SH',
         short_name: 'Yusoof',
         start_url: '/',
         background_color: config.colors.darkNavy,
