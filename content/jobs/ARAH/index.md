@@ -2,9 +2,9 @@
 date: '2020-09-15'
 title: 'Flutter Developer'
 company: 'ARAH Akakia Teknologi'
-location: 'Banten'
+location: 'Banten, ID'
 range: 'Sep 2020 - Mar 2021'
-url: ''
+url: 'https://github.com/viva-IT'
 ---
 
 - Helps maintained and engineered Wellness Center, a doctor consulting application.

@@ -144,8 +144,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          'G-PH69C109CR',
+          'G-JN55BTQWVH',
         ],
+        gtagConfig: {
+          send_page_view: true
+        },
       },
     },
   ],

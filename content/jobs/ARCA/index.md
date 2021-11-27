@@ -2,7 +2,7 @@
 date: '2017-10-02'
 title: 'Software Developer Intern'
 company: 'Arca International'
-location: 'Jakarta'
+location: 'Jakarta, ID'
 range: 'Nov 2016 - Oct 2017'
 url: 'https://arcacorp.com'
 ---
