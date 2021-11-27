@@ -2,7 +2,7 @@
 date: '2018-10-12'
 title: 'Mobile Developer'
 company: '360 Solusi Teknologi'
-location: 'Bandung'
+location: 'Bandung, ID'
 range: 'Nov 2020 - Jun 2021'
 url: 'https://360solusiteknologi.co.id'
 ---

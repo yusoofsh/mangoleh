@@ -61,13 +61,13 @@ const Hero = () => {
 
   const two = <h2 className="big-heading">Yusoof Mohammad SH.</h2>;
 
-  const three = <h3 className="medium-heading">I build hybrid apps that scales.</h3>;
+  const three = <h3 className="medium-heading">I build microservices that scales.</h3>;
 
   const four = (
     <p>
-      I enjoy building systems that adopt the experimental(and contribute if necessary)
+      I enjoy building systems in which adopting the experimental(and contribute if necessary)
       state-of-the-art approach to produce scalable solutions while making sure it is stable enough
-      to reach into production :).
+      to reach into production in a timely manner 👨‍💻
     </p>
   );
 

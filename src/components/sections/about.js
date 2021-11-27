@@ -154,7 +154,7 @@ const About = () => {
           <div>
             <p>
               You can call me Yusoof pronounced &quot;Yu-sof&quot;, a software engineer who works
-              remotely from somewhere in small village at Malang, Indonesia.
+              remotely somewhere on a small village at Malang, ID.
             </p>
 
             <p>
