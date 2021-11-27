@@ -139,7 +139,7 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Chrome, Web Extensions',
+    'Chrome Extension, Browser',
     'Flutter, Mobile Development',
     'Firebase, Development Platform',
     'TypeScript, Dart, Python, Kotlin'
@@ -160,7 +160,7 @@ const About = () => {
             <p>
               Currently working <a href="https://cloudthought.co">[at] Cloud Thought</a>{' '}
               as Full Stack Developer. Mainly focus on browser extension development,{' '}
-              and uses micro service architecture.Some products and projects{' '}
+              which uses micro service architecture. Some products and projects{' '}
               I've been working on include shopping recommendator, medical consultation,{' '}
               IoT integrated, real-time notification, and much more.{' '}
               Was previously had an amazing learning experience: Internship{' '}

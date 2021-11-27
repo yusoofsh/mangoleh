@@ -296,8 +296,9 @@ const Jobs = () => {
                           {company}
                         </a>
                       </span>
-                      <span>&nbsp;,&nbsp;{location}</span>
                     </h3>
+
+                    <h4>{location}</h4>
 
                     <p className="range">{range}</p>
 
