@@ -158,27 +158,27 @@ const About = () => {
             </p>
 
             <p>
-              Currently working <a href="https://cloudthought.co">[at] Cloud Thought</a>{' '}
+              Currently working <a href="https://cloudthought.co">@Cloud Thought</a>{' '}
               as Full Stack Developer, mainly focused on browser extension development,{' '}
               which uses micro service architecture, and variety of technologies combined.{' '}
               Some products and projects I've been working on include product recommender,{' '}
               medical consultation, IoT integrated, real-time notification, and much more.{' '}
               Was previously had an amazing learning experience: Internship{' '}
-              <a href="https://arcacorp.com">[at] Arca International</a>, Freelance{' '}
-              <a href="https://ikpi.or.id">[at] Ikatan Konsultan Pajak Indonesia</a>, and{' '}
-              <a href="https://intermediatama.com">[at] Intermediatama</a>, Employee{' '}
-              <a href="https://github.com/viva-IT">[at] ARAH Akakia Teknologi</a>, and{' '}
-              <a href="https://360solusiteknologi.co.id">[at] 360 Solusi Teknologi</a>{'.'}
+              <a href="https://arcacorp.com">@Arca International</a>, Freelance{' '}
+              <a href="https://ikpi.or.id">@Ikatan Konsultan Pajak Indonesia</a>, and{' '}
+              <a href="https://intermediatama.com">@Intermediatama</a>, Employee{' '}
+              <a href="https://github.com/viva-IT">@ARAH Akakia Teknologi</a>, and{' '}
+              <a href="https://360solusiteknologi.co.id">@360 Solusi Teknologi</a>{'.'}
             </p>
 
             <p>
               Worth mentioning, that I also actively helping other folks in local communities{' '}
-              <a href="https://t.me/flutter_id">[at] Flutter Indonesia</a>. Especially with sharing
+              <a href="https://t.me/flutter_id">@Flutter Indonesia</a>. Especially with sharing
               some insight and knowledge, you invest in yourself by being kind and grateful.
             </p>
 
             <p>
-              I have graduated from <a href="https://smkn4malang.sch.id">[at] Grafika</a>,
+              I have graduated from <a href="https://smkn4malang.sch.id">@Grafika</a>,
               specializing in Software Engineering. At Grafika, I learn so many programming building
               blocks.
             </p>
