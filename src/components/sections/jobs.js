@@ -273,7 +273,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, index) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company, location, range } = frontmatter;
 
               return (
                 <CSSTransition
@@ -296,6 +296,7 @@ const Jobs = () => {
                           {company}
                         </a>
                       </span>
+                      <span>&nbsp;,&nbsp;{location}</span>
                     </h3>
 
                     <p className="range">{range}</p>
