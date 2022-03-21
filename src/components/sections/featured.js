@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
@@ -174,6 +174,11 @@ const StyledProject = styled.li`
     a {
       ${({ theme }) => theme.mixins.inlineLink};
     }
+
+    strong {
+      color: var(--white);
+      font-weight: normal;
+    }
   }
 
   .project-tech-list {
@@ -287,7 +292,7 @@ const StyledProject = styled.li`
         object-fit: cover;
         width: auto;
         height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(80%);
+        filter: grayscale(100%) contrast(1) brightness(50%);
       }
     }
   }
@@ -295,10 +300,10 @@ const StyledProject = styled.li`
 
 const Featured = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/featured/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___date], order: ASC }
       ) {
         edges {
           node {
@@ -306,9 +311,7 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                  }
+                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
               }
               tech
@@ -333,9 +336,7 @@ const Featured = () => {
     }
 
     sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, index) =>
-      sr.reveal(ref, srConfig(index * 100)),
-    );
+    revealProjects.current.forEach((ref, index) => sr.reveal(ref, srConfig(index * 100)));
   }, []);
 
   return (
@@ -349,11 +350,10 @@ const Featured = () => {
           featuredProjects.map(({ node }, index) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
+            const image = getImage(cover);
 
             return (
-              <StyledProject
-                key={index}
-                ref={el => (revealProjects.current[index] = el)}>
+              <StyledProject key={index} ref={el => (revealProjects.current[index] = el)}>
                 <div className="project-content">
                   <div>
                     <p className="project-overline">Featured Project</p>
@@ -361,10 +361,10 @@ const Featured = () => {
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
                     </h3>
-                  <div
-                    className="project-description"
-                    dangerouslySetInnerHTML={{ __html: html }}
-                  />
+                    <div
+                      className="project-description"
+                      dangerouslySetInnerHTML={{ __html: html }}
+                    />
 
                     {tech.length && (
                       <ul className="project-tech-list">
@@ -391,11 +391,7 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
-                    <Img
-                      fluid={cover.childImageSharp.fluid}
-                      alt={title}
-                      className="img"
-                    />
+                    <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>
               </StyledProject>

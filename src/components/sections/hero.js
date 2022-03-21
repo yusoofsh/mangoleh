@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { loaderDelay, navDelay } from '@utils';
+import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+// import { email } from '@config';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -35,7 +36,7 @@ const StyledHeroSection = styled.section`
 
   p {
     margin: 20px 0 0;
-    max-width: 500px;
+    max-width: 540px;
   }
 
   .email-link {
@@ -64,14 +65,21 @@ const Hero = () => {
   const three = <h3 className="medium-heading">I build microservices that scales.</h3>;
 
   const four = (
-    <p>
-      I enjoy building systems in which adopting the experimental(and contribute if necessary)
-      state-of-the-art approach to produce scalable solutions while making sure it is stable enough
-      to reach into production in a timely manner 👨‍💻
-    </p>
+    <>
+      <p>
+        I enjoy building systems in which adopting the experimental(and contribute if necessary)
+        state-of-the-art approach to produce scalable solutions while making sure it is stable
+        enough to reach into production in a timely manner. 👨‍💻
+      </p>
+    </>
+  );
+  const five = (
+    <a className="email-link" href="https://www.heyfoodlama.com" target="_blank" rel="noreferrer">
+      Check out what I’m up working on
+    </a>
   );
 
-  const items = [one, two, three, four];
+  const items = [one, two, three, four, five];
 
   return (
     <StyledHeroSection>

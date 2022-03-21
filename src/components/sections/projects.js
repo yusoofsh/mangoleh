@@ -202,9 +202,7 @@ const Projects = () => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, index) =>
-      sr.reveal(ref, srConfig(index * 100)),
-    );
+    revealProjects.current.forEach((ref, index) => sr.reveal(ref, srConfig(index * 100)));
   }, []);
 
   const GRID_LIMIT = 6;
@@ -225,12 +223,18 @@ const Projects = () => {
             </div>
             <div className="project-links">
               {github && (
-                <a href={github} aria-label="GitHub Link">
+                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
                 </a>
               )}
               {external && (
-                <a href={external} aria-label="External Link" className="external">
+                <a
+                  href={external}
+                  aria-label="External Link"
+                  className="external"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon name="External" />
                 </a>
               )}
@@ -238,7 +242,9 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external}>{title}</a>
+            <a href={external} target="_blank" rel="noreferrer">
+              {title}
+            </a>
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
@@ -281,13 +287,15 @@ const Projects = () => {
                   key={i}
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
+                  exit={false}
+                >
                   <StyledProject
                     key={i}
                     ref={el => (revealProjects.current[i] = el)}
                     style={{
                       transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
+                    }}
+                  >
                     {projectInner(node)}
                   </StyledProject>
                 </CSSTransition>

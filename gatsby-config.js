@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
@@ -143,11 +144,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          'G-JN55BTQWVH',
-        ],
+        trackingIds: ['G-JN55BTQWVH'],
         gtagConfig: {
-          send_page_view: true
+          send_page_view: true,
         },
       },
     },
