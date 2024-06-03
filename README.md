@@ -2,7 +2,7 @@
   🤹 MANGOLEH
 </h1>
 <p align="center">
-  The third iteration of <a href="https://www.wecy.dev" target="_blank">wecy.dev</a> built with <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> and hosted with <a href="https://www.vercel.com" target="_blank">Vercel</a>.
+  The third iteration of <a href="https://old.yusoofsh.id" target="_blank">yusoofsh.id</a> built with <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a> and hosted with <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a>.
   All credit goes to Brittany Chiang for coding up the fourth iteration of her website, which is the base for this website.
 </p>
 

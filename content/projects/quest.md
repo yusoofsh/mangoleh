@@ -1,7 +1,7 @@
 ---
 date: '2021-03-14'
 title: 'Quest'
-github: 'https://github.com/fouyos/quest'
+github: 'https://github.com/yusoofsh/quest'
 external: ''
 tech:
   - Flutter

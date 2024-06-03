@@ -1,11 +1,7 @@
 module.exports = {
-  email: 'yusoofsh@wecy.dev',
+  email: 'me@yusoofsh.id',
 
   socialMedia: [
-    {
-      name: 'Telegram',
-      url: 'https://t.me/yusoofsh',
-    },
     {
       name: 'Linkedin',
       url: 'https://linkedin.com/in/yusoofsh',

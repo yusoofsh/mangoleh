@@ -2,13 +2,13 @@
 date: '2020-12-17'
 title: 'AWAS'
 cover: './image.png'
-github: 'https://github.com/fouyos/logeen'
+github: 'https://github.com/yusoofsh/logeen'
 external: 'https://awastech.com/'
 tech:
-- Flutter
-- Firebase
-- Laravel
-- Bluetooth
+  - Flutter
+  - Firebase
+  - Laravel
+  - Bluetooth
 
 showInProjects: true
 ---

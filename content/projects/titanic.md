@@ -1,7 +1,7 @@
 ---
 date: '2020-08-17'
 title: 'Titanic'
-github: 'https://github.com/fouyos/titanic'
+github: 'https://github.com/yusoofsh/titanic'
 external: 'https://www.kaggle.com/c/titanic'
 tech:
   - Jupyter Notebook

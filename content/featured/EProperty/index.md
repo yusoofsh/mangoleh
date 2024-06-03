@@ -2,12 +2,12 @@
 date: '2020-11-20'
 title: 'E-Property'
 cover: './image.png'
-github: 'https://github.com/fouyos/eproperty'
+github: 'https://github.com/yusoofsh/eproperty'
 external: ''
 tech:
-- Flutter
-- Laravel
-- Hive
+  - Flutter
+  - Laravel
+  - Hive
 
 showInProjects: true
 ---

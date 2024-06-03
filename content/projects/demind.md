@@ -1,7 +1,7 @@
 ---
 date: '2021-04-21'
 title: 'Demind'
-github: 'https://github.com/fouyos/demind'
+github: 'https://github.com/yusoofsh/demind'
 external: 'https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps'
 tech:
   - Flutter

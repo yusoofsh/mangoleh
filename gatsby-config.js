@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Yusoof\'s Portfolio',
+    title: 'Yusoofs Portfolio V3',
     description: 'it is what it is',
-    siteUrl: 'https://www.wecy.dev', // No trailing slash allowed!
+    siteUrl: 'https://old.yusoofsh.id', // No trailing slash allowed!
     image: '/src/images/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@yusoofsh',
   },
