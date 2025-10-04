@@ -147,12 +147,12 @@ const StyledSidebar = styled.aside`
     }
   }
 
-  .resume-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    padding: 18px 50px;
-    margin: 10% auto 0;
-    width: max-content;
-  }
+  // .resume-link {
+  //   ${({ theme }) => theme.mixins.bigButton};
+  //   padding: 18px 50px;
+  //   margin: 10% auto 0;
+  //   width: max-content;
+  // }
 `;
 
 const Menu = () => {
@@ -267,9 +267,9 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
-              Resume
-            </a>
+            // <a href="/resume.pdf" className="resume-link">
+            //   Resume
+            // </a>
           </nav>
         </StyledSidebar>
       </div>
